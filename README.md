@@ -7,16 +7,15 @@ A full-stack e-commerce web app for selling TVs, built with the MERN stack.
 - Browse and view TV products
 - Shopping cart with quantity controls and discount code input
 - Admin dashboard — Add, Edit, Delete products (CRUD via MongoDB)
-- Admin login with protected routes
+- Password-protected admin panel
 
 ## Tech Stack
 
-| Layer    | Tech                        |
-|----------|-----------------------------|
-| Frontend | React.js, React Router      |
-| Backend  | Node.js, Express.js         |
-| Database | MongoDB, Mongoose           |
-| Auth     | JWT                         |
+| Layer    | Tech                   |
+|----------|------------------------|
+| Frontend | React.js, React Router |
+| Backend  | Node.js, Express.js    |
+| Database | MongoDB, Mongoose      |
 
 ## Project Structure
 
@@ -48,9 +47,8 @@ node index.js
 Add a `.env` file:
 ```
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret
 ```
 
 ## Admin
 
-Access admin panel at `/admin` — protected via JWT auth.
+Access admin panel at `/admin` — credentials required to manage products.
