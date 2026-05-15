@@ -1,0 +1,15 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: contain;
+  background-color: #000; /* fills empty sides */
+}
